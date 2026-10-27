@@ -23,6 +23,24 @@
             </div>
         </nav>
     </header>
+<div class="page-search">
+  <form id="pageSearchForm" role="search">
+    <label for="pageSearchInput">Пошук на сторінці</label>
+
+    <input
+      id="pageSearchInput"
+      type="search"
+      placeholder="Введіть слово або фразу"
+    >
+
+    <button type="submit">Знайти</button>
+    <button type="button" id="pageSearchClear">Очистити</button>
+    <button type="button" id="pageSearchPrev" disabled>Попередній</button>
+    <button type="button" id="pageSearchNext" disabled>Наступний</button>
+
+    <p id="pageSearchStatus" aria-live="polite"></p>
+  </form>
+</div>
 
     <main class="container">
         <section class="hero">
@@ -198,6 +216,7 @@
 
     <footer>© 2026 SavePass</footer>
 </div>
+    <script src="js/page-search.js" defer></script>
     <script src="js/matrix.js"></script>
 </body>
 </html>
